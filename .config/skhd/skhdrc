@@ -61,8 +61,10 @@ shift + alt - right : yabai -m window --space next;\
 ctrl + shift + alt - left : yabai -m space --display west
 ctrl + shift + alt - right : yabai -m space --display east
 
-shift + alt - n : yabai -m space --create
-shift + alt - c : yabai -m space --destroy
+shift + alt - n : yabai -m space --create;\
+		  sketchybar --reload
+shift + alt - c : yabai -m space --destroy;\
+		  sketchybar --reload
 
 alt - 1 : yabai -m space --focus 1
 alt - 2 : yabai -m space --focus 2

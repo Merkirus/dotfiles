@@ -71,26 +71,12 @@ require('lazy').setup({
     },
   },
 
-  -- { -- Theme inspired by Atom
-  --   'navarasu/onedark.nvim',
-  --   priority = 1000,
-  --   config = function()
-  --     vim.cmd.colorscheme 'onedark'
-  --   end,
-  -- },
-
-  -- {
-  --   'xiyaowong/transparent.nvim',
-  --   opts = {
-  --     extra_groups = { "NormalFloat", "NvimTreeNormal"},
-  --   },
-  -- },
-
+  -- Theme
   {
     'folke/tokyonight.nvim',
     priority = 1000,
     opts = {
-      style = "moon",
+      -- style = "storm",
       transparent = true,
       styles = {
         sidebars = "transparent",

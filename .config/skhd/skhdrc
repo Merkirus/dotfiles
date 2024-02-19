@@ -27,13 +27,13 @@ shift + ctrl + alt + cmd - right : yabai -m window --display east;\
 				   yabai -m display --focus east
 
 # space
-cmd - left : yabai -m space --focus prev
-cmd - right : yabai -m space --focus next
+alt + cmd - left : yabai -m space --focus prev
+alt + cmd - right : yabai -m space --focus next
 
 # move to space
-shift + cmd - left : yabai -m window --space prev;\
+shift + alt + cmd - left : yabai -m window --space prev;\
 		     yabai -m space --focus prev
-shift + cmd - right : yabai -m window --space next;\
+shift + alt + cmd - right : yabai -m window --space next;\
 		     yabai -m space --focus next
 
 # ctrl + shift + alt - left : yabai -m space --display west

@@ -5,9 +5,6 @@
     inputs.nix-colors.homeManagerModules.default
     ./nixvim
     ./wayland
-    ./waybar
-    ./mako
-    ./rofi
   ];
 
   home.username = "frafau";

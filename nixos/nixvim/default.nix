@@ -76,11 +76,6 @@
       };
     };
 
-    # clipboard.providers.wl-copy = {
-    #   enable = true;
-    #   package = pkgs.wl-clipboard;
-    # };
-
     options = {
       number = true;
       relativenumber = true;
@@ -134,16 +129,6 @@
         mode = "n";
         key = "<leader>`";
         action = ":NvimTreeToggle<cr>";
-      }
-      {
-        mode = "n";
-        key = "[d";
-        action = "vim.diagnostics.goto_prev";
-      }
-      {
-        mode = "n";
-        key = "[d";
-        action = "vim.diagnostics.goto_next";
       }
     ];
   };

@@ -24,6 +24,7 @@
     eza
     firefox
     fzf
+    gimp
     grim
     jq
     libnotify
@@ -34,6 +35,7 @@
     nsxiv
     obsidian
     obs-studio
+    pandoc
     pavucontrol
     poppler
     rclone
@@ -42,6 +44,7 @@
     slurp
     swappy
     swww
+    texliveFull
     vlc
     wl-clipboard
     xfce.thunar
@@ -87,6 +90,15 @@
     shellAliases = {
       ll = "eza -l --git --header";
     };
+    initExtra = ''
+      stopwatch() {
+        local start=$(date +%s)
+        while true; do
+          local time="$(($(date +%s) - $start))"
+          printf '%s\r' "$(date -u -d "@$time" +%H:%M:%S)"
+        done
+      }
+    '';
   };
 
   programs.git = {
